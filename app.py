@@ -8,13 +8,13 @@ import seaborn as sns
 import plotly.figure_factory as ff
 
 
-df = pd.read_csv("../streamlit-app/athlete_events.csv")
-region_df = pd.read_csv("../streamlit-app/noc_regions.csv")
+df = pd.read_csv("./resources/athlete_events.csv")
+region_df = pd.read_csv("./resources/noc_regions.csv")
 
 df = pre_processor.preprocess(df, region_df)
 
 st.sidebar.title("Olympics Analysis")
-st.sidebar.image("../streamlit-app/olympic_logo.png", use_column_width="always")
+st.sidebar.image("./resources/olympic_logo.png", use_column_width="always")
 user_menu = st.sidebar.radio(
     "Select an Option",
     (
