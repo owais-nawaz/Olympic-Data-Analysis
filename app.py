@@ -14,7 +14,7 @@ region_df = pd.read_csv("../streamlit-app/noc_regions.csv")
 df = pre_processor.preprocess(df, region_df)
 
 st.sidebar.title("Olympics Analysis")
-st.sidebar.image("./olympic_logo.png", use_column_width="always")
+st.sidebar.image("../streamlit-app/olympic_logo.png", use_column_width="always")
 user_menu = st.sidebar.radio(
     "Select an Option",
     (
